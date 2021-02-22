@@ -25,7 +25,9 @@ passport.use(
 		{
 			clientID: keys.googleClientID,
 			clientSecret: keys.googleClientSecret,
-			callbackURL: "/auth/google/callback",
+			callbackURL: "/auth/google/callback",  //relative URL is issue number one that cause https -> http
+			// https -> http after proxy, solution 1: full path
+			proxy: true // solution 2
 		},
 		(accessToken, refreshToken, profile, done) => {
 			// initiate a query
