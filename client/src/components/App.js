@@ -3,17 +3,21 @@ import { BrowserRouter, Route } from "react-router-dom"; // BR:brains, Route: se
 
 // dummy components
 
-const Header = () => <h2>Header</h2>;
+//const Header = () => <h2>Header</h2>; dummy header
+import Header from "./Header";
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 const Landing = () => <h2>Landing</h2>;
 // gonna be solely about css
 const App = () => {
 	return (
-		<div>
+		<div className="container">
 			<BrowserRouter>
 				<div>
-					<Route path="/" component={Landing} />
+					<Header />
+					<Route exact path="/" component={Landing} />
+					<Route exact path="/surveys" component={Dashboard} />
+					<Route path="/surveys/new" component={SurveyNew} />
 				</div>
 			</BrowserRouter>
 		</div>

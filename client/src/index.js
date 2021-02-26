@@ -1,4 +1,5 @@
 // render root components to the dom.
+import "materialize-css/dist/css/materialize.min.css"; //no need to specify a relative path
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
