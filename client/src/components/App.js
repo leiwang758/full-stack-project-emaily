@@ -7,17 +7,23 @@ import * as actions from "../actions";
 
 //const Header = () => <h2>Header</h2>; dummy header
 import Header from "./Header";
+import Landing from "./Landing";
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
-const Landing = () => <h2>Landing</h2>;
+// const Landing = () => <h2>Landing</h2>;
+
 // gonna be solely about css
 
 class App extends Component {
 	//ES6 class
 	componentDidMount() {
+		//
 		this.props.fetchUser();
-		// WillMount
 	}
+	// WillMount
+	//is invoked immediately after a component is mounted (inserted into the tree).
+	//Initialization that requires DOM nodes should go here. If you need to load data from a remote endpoint,
+	//this is a good place to instantiate the network request.
 
 	render() {
 		return (

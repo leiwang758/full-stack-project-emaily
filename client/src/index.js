@@ -1,4 +1,4 @@
-// render root components to the dom.
+// render root components to the dom. ES2015 module (import)
 import "materialize-css/dist/css/materialize.min.css"; //no need to specify a relative path
 import React from "react";
 import ReactDOM from "react-dom";
@@ -17,3 +17,6 @@ ReactDOM.render(
 	</Provider>,
 	document.querySelector("#root")
 );
+
+// console.log("STRIPE KEY IS ", process.env.REACT_APP_STRIPE_KEY);
+// console.log("Environment is ", process.env.NODE_ENV);

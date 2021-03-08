@@ -7,4 +7,7 @@ module.exports = {
 	cookieKey: process.env.COOKIE_KEY,
 	//mongodb+srv://leiwangProd:HSwY0ZuvsZ6buPXB@cluster0.6pzea.mongodb.net/prod?retryWrites=true&w=majority
 	// facebook, etc.
+
+	stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+	stripeSecretKey: process.env.STRIPE_SECRET_KEY,
 }; //

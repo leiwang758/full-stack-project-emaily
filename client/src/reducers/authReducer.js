@@ -6,7 +6,7 @@ export default function (state = null, action) {
 		case FETCH_USER: // we don't want this return to take too long
 			return action.payload || false;
 		default:
-			console.log(state);
+			console.log("Still loading:", state);
 			return state;
 	}
 }
