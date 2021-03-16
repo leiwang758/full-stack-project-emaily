@@ -8,6 +8,9 @@ import reduxThunk from "redux-thunk"; // allow us to manually dispatch the actio
 
 import App from "./components/App";
 import reducers from "./reducers";
+import axios from "axios";
+window.axios = axios;
+// use aixos in browser console
 
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 

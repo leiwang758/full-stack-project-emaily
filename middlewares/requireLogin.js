@@ -7,3 +7,4 @@ module.exports = (req, res, next) => {
 };
 
 // a middleware is a function that takes the incoming request and has the ability of modifying it.
+// 401 Not authorized
