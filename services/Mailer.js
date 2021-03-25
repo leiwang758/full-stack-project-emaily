@@ -41,6 +41,7 @@ class Mailer extends helper.Mail {
 	}
 
 	async send() {
+		//console.log("send");
 		const request = this.sgApi.emptyRequest({
 			method: "POST",
 			path: "/v3/mail/send",
