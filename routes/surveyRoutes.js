@@ -88,4 +88,11 @@ module.exports = (app) => {
 			res.status(422).send(err);
 		}
 	});
+
+	app.delete("/api/surveys/:id", requireLogin, async (req, res) => {
+		await Survey.deleteOne({ _id: req.params.id });
+		res.json("successfully deleted");
+		//res.status(200).send(`delete: ${req.params.id}`);
+		//console.log(`delete: ${req.params.id}`);
+	});
 };
