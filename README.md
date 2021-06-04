@@ -1,7 +1,7 @@
 # full-stack-project-emaily
 This is a feedback collecting app
 **Tech Stack**: MongoDB, Express.js, React.js
- - client: front-end using React/Redux
+ - Front-end using React/Redux
  - Back-end using Node.js/Express.js
  - Database: MongoDB
  - External APIs: GoogleAuth for user authentification, Sendgrid for sending emails, Stripe
