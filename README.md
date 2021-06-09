@@ -10,6 +10,7 @@ This is a feedback collecting app
 # Getting Started
 
 1. Clone or download repository
+2. Run `npm install` in both current folder and the client folder
 
 # Run app
 
